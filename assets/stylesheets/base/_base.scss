@@ -1,9 +1,9 @@
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -21,15 +21,15 @@ input {
 }
 
 body {
+  min-height: 100vh;
   -webkit-animation: bgcolorchange 25s infinite;
   animation: bgcolorchange 25s infinite;
   background-image: linear-gradient(-180deg, $white 3%, transparent 50%);
-  min-height: 100vh;
 }
 
 .container {
-  margin: 3rem auto;
   width: 50%;
+  margin: 3rem auto;
 
   @include respond(phone) {
     width: 90%;

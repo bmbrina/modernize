@@ -16,9 +16,9 @@
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 html {
   font-size: 62.5%; }
@@ -32,14 +32,14 @@ input {
   font-weight: 400; }
 
 body {
+  min-height: 100vh;
   -webkit-animation: bgcolorchange 25s infinite;
   animation: bgcolorchange 25s infinite;
-  background-image: linear-gradient(-180deg, #FFF 3%, transparent 50%);
-  min-height: 100vh; }
+  background-image: linear-gradient(-180deg, #FFF 3%, transparent 50%); }
 
 .container {
-  margin: 3rem auto;
-  width: 50%; }
+  width: 50%;
+  margin: 3rem auto; }
   @media only screen and (max-width: 48em) {
     .container {
       width: 90%; } }
@@ -63,31 +63,31 @@ body {
 .form {
   box-shadow: 0 7px 14px 0 rgba(110, 183, 194, 0.37); }
   .form__header {
+    padding: 1.5rem 0;
     background-color: #545253;
     color: #FFF;
-    text-align: center;
-    padding: 1.5rem 0; }
+    text-align: center; }
   .form__title {
+    width: 60%;
+    margin: 0 auto;
     font-size: 1.8rem;
     font-weight: 600;
-    line-height: 2.4rem;
-    width: 60%;
-    margin: 0 auto; }
+    line-height: 2.4rem; }
   .form__content {
-    background-color: #FFF;
-    padding: 3rem 5rem; }
+    padding: 3rem 5rem;
+    background-color: #FFF; }
     @media only screen and (max-width: 48em) {
       .form__content {
         padding: 3rem; } }
   .form__input {
-    border: 1px solid #D8D8D8;
-    font-weight: 300;
-    font-size: 1.4rem;
-    color: #747375;
+    display: block;
     width: 100%;
     padding: 1rem;
+    border: 1px solid #D8D8D8;
     border-radius: 4px;
-    display: block; }
+    color: #747375;
+    font-size: 1.4rem;
+    font-weight: 300; }
     @media only screen and (max-width: 48em) {
       .form__input {
         padding: 1.5rem 1rem; } }
@@ -107,12 +107,12 @@ body {
       margin-top: 2rem; }
 
 .button {
-  text-transform: uppercase;
-  padding: 1.3rem 8rem;
   display: inline-block;
+  padding: 1.3rem 8rem;
+  border: none;
   border-radius: 10rem;
   font-size: 1.4rem;
-  border: none; }
+  text-transform: uppercase; }
   @media only screen and (max-width: 48em) {
     .button {
       width: 100%; } }
@@ -125,53 +125,53 @@ body {
     color: #FFF; }
 
 .header {
-  background-color: #545253;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  background-color: #545253; }
 
 .section-info {
-  font-weight: 300;
-  color: #545253; }
+  color: #545253;
+  font-weight: 300; }
   .section-info__container {
     width: 65%;
     margin: 0 auto;
-    border: 2px solid #A0BC57;
-    padding: 2rem; }
+    padding: 2rem;
+    border: 2px solid #A0BC57; }
     @media only screen and (max-width: 48em) {
       .section-info__container {
         width: 100%; } }
   .section-info__legend {
-    text-align: center;
-    text-transform: uppercase;
+    padding: 0 6rem;
+    color: #545253;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #545253;
-    padding: 0 6rem; }
+    text-align: center;
+    text-transform: uppercase; }
     @media only screen and (max-width: 48em) {
       .section-info__legend {
-        font-size: 1.6rem;
-        padding: 0 2rem; } }
+        padding: 0 2rem;
+        font-size: 1.6rem; } }
   .section-info__content {
-    background-color: rgba(255, 255, 255, 0.75);
-    padding: 2rem; }
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.75); }
   .section-info__tag {
     color: #A0BC57;
-    text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 600; }
+    font-weight: 600;
+    text-transform: uppercase; }
   .section-info__title {
-    font-size: 2rem;
     margin-bottom: 1rem;
+    font-size: 2rem;
     font-weight: 300; }
   .section-info__text {
     font-size: 1.4rem; }
   .section-info__action {
-    font-weight: 600;
-    font-size: 1.4rem;
+    display: block;
     color: #6EB7C2;
-    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
     text-decoration: none;
-    cursor: pointer;
-    display: block; }
+    text-transform: uppercase;
+    cursor: pointer; }
     @media only screen and (max-width: 48em) {
       .section-info__action {
         display: inline-block; } }
