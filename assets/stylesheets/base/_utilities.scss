@@ -1,0 +1,23 @@
+.align-flex {
+  display: flex;
+
+  &.is-column {
+    flex-direction: column;
+  }
+
+  &.vertical {
+    justify-content: center;
+  }
+}
+
+.margin-top-small {
+  margin-top: 2rem;
+}
+
+.margin-top-medium {
+  margin-top: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}

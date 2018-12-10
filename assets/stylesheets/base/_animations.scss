@@ -1,0 +1,21 @@
+@keyframes bgcolorchange {
+  0% {
+    background-color: $background-color-1;
+  }
+
+  25% {
+    background-color: $background-color-2;
+  }
+
+  50% {
+    background-color: $background-color-1;
+  }
+
+  75% {
+    background-color: $background-color-2;
+  }
+
+  100% {
+    background-color: $background-color-1;
+  }
+}

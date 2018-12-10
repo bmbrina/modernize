@@ -1,0 +1,70 @@
+.form {
+  box-shadow: 0 7px 14px 0 rgba($shadow-color, 0.37);
+
+  &__header {
+    background-color: $grey-color;
+    color: $white;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__content {
+    background-color: $white;
+    padding: 3rem 5rem;
+
+    @include respond(phone) {
+      padding: 3rem;
+    }
+  }
+
+  &__input {
+    border: 1px solid $border-color;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: $light-grey-color;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    display: block;
+
+    @include respond(phone) {
+      padding: 1.5rem 1rem;
+    }
+    
+    &:focus {
+      outline: none;
+
+      &:invalid {
+        border: 1px solid $red-color;
+      }
+    }
+
+    & + & {
+      margin-left: 2.5rem;
+    }
+
+    &.city {
+      width: 70%;
+    }
+
+    &.state {
+      width: 30%;
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+
+    & + .wrapper {
+      margin-top: 2rem;
+    }
+  }
+}

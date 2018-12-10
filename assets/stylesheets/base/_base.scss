@@ -8,8 +8,30 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px --> 10px/16px = 62.5%
+
+  @include respond(phone) {
+    font-size: 56.25%; // 1rem = 9px --> 9px/16px = 56.25%
+  }
+}
+
+body,
+input {
+  font-family: $base-font, sans-serif;
+  font-weight: 400;
 }
 
 body {
-  font-family: $base-font, sans-serif;
+  -webkit-animation: bgcolorchange 25s infinite;
+  animation: bgcolorchange 25s infinite;
+  background-image: linear-gradient(-180deg, $white 3%, transparent 50%);
+  min-height: 100vh;
+}
+
+.container {
+  margin: 3rem auto;
+  width: 50%;
+
+  @include respond(phone) {
+    width: 90%;
+  }
 }

@@ -1,0 +1,25 @@
+.button {
+  text-transform: uppercase;
+  padding: 1.3rem 8rem;
+  display: inline-block;
+  border-radius: 10rem;
+  font-size: 1.4rem;
+  border: none;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: 0 0.5rem 2rem rgba($black, 0.2);
+  }
+
+  &--primary {
+    background-color: $action-color;
+    color: $white;
+  }
+}

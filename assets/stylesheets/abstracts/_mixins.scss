@@ -1,0 +1,13 @@
+// Media Queries
+/*
+  0 - 767px: Phone
+*/
+
+// 1em = 16px
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 48em) { // 767/16 = 47.94
+      @content
+    };
+  }
+}

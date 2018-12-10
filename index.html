@@ -9,11 +9,46 @@
   <title>Modernize</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header align-flex vertical">
     <img src="/assets/images/logo.svg" alt="Modernize logo">
   </header>
   <div class="container">
-    
+    <div class="form">
+      <div class="form__header">
+        <p class="form__title">Enter to win a 3rd generation Nest Learning Thermostat worth $249.</p>
+      </div>
+      <form action="post" class="form__content align-flex vertical is-column">
+        <div class="wrapper">
+          <input type="text" class="form__input" placeholder="Name" minlength="2" required>
+        </div>
+        <div class="wrapper align-flex">
+          <input type="text" class="form__input city" placeholder="City">
+          <input type="text" class="form__input state" placeholder="State">
+        </div>
+        <div class="wrapper">
+          <input type="tel" class="form__input" placeholder="Phone Number" pattern="\(\d{3}\)[\s]\d{3}[\-]\d{4}" required>
+        </div>
+        <div class="wrapper">
+          <input type="email" class="form__input" placeholder="Email Address" required>
+        </div>
+        <div class="margin-top-small text-center">
+          <button type="submit" class="button button--primary">Enter to win</button>
+        </div>
+      </form>
+    </div>
+    <section class="section-info margin-top-medium">
+      <fieldset class="section-info__container">
+        <legend class="section-info__legend">Even more savings</legend>
+        <div class="section-info__content">
+          <p class="section-info__tag">Advertorial</p>
+          <h2 class="section-info__title">Tricks Homeowners Use to Eliminate Bills</h2>
+            <p class="section-info__text">Surging energy bills, unpredictable weather patterns and dissatisfaction with utility
+              companies have homeowners scrambling… 
+              <a href="https://www.google.com" target="_blank" class="section-info__action">READ MORE</a>
+            </p>
+        </div>
+      </fieldset>
+    </section>
   </div>
 </body>
 </html>
