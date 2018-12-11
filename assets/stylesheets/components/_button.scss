@@ -14,6 +14,14 @@
     outline: none;
   }
 
+  &:disabled {
+    background-color: $border-color;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
   &:hover {
     box-shadow: 0 0.5rem 2rem rgba($black, 0.2);
   }

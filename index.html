@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="assets/stylesheets/application.css">
-
   <title>Modernize</title>
 </head>
 <body>
@@ -17,22 +16,22 @@
       <div class="form__header">
         <p class="form__title">Enter to win a 3rd generation Nest Learning Thermostat worth $249.</p>
       </div>
-      <form action="post" class="form__content align-flex vertical is-column">
+      <form method="POST" id="registrationForm" class="form__content align-flex vertical is-column">
         <div class="wrapper">
-          <input type="text" class="form__input" placeholder="Name" minlength="2" required>
+          <input type="text" id="name" class="form__input" placeholder="Name" minlength="2" required>
         </div>
         <div class="wrapper align-flex">
-          <input type="text" class="form__input city" placeholder="City">
-          <input type="text" class="form__input state" placeholder="State">
+          <input type="text" id="city" class="form__input city" placeholder="City">
+          <input type="text" id="state" class="form__input state" placeholder="State">
         </div>
         <div class="wrapper">
-          <input type="tel" class="form__input" placeholder="Phone Number" pattern="\(\d{3}\)[\s]\d{3}[\-]\d{4}" required>
+          <input type="tel" id="phone" class="form__input" placeholder="Phone Number" pattern="\(\d{3}\)[\s]\d{3}[\-]\d{4}" required>
         </div>
         <div class="wrapper">
-          <input type="email" class="form__input" placeholder="Email Address" required>
+          <input type="email" id="email" class="form__input" placeholder="Email Address" required>
         </div>
         <div class="margin-top-small text-center">
-          <button type="submit" class="button button--primary">Enter to win</button>
+          <button type="submit" id="submitBtn" class="button button--primary">Enter to win</button>
         </div>
       </form>
     </div>
@@ -50,5 +49,7 @@
       </fieldset>
     </section>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/javascripts/application.js"></script>
 </body>
 </html>
