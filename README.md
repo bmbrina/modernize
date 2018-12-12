@@ -1,6 +1,8 @@
 ## Modernize
 
-To run the project:
+The project is live [here](https://bmbrina.github.io/modernize/)
+
+Additionally, if you want to run the project locally:
 
 ```
 $ npm i live-server
